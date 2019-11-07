@@ -2,9 +2,9 @@
 
 Thanks for your interest in making Metasploit -- and therefore, the
 world -- a better place!  Before you get started, review our
-[Code of Conduct].  There are mutliple ways to help beyond just writing code:
+[Code of Conduct].  There are multiple ways to help beyond just writing code:
  - [Submit bugs and feature requests] with detailed information about your issue or idea.
- - [Help fellow users with open issues] or [help fellow committers test recent pull requests].
+ - [Help fellow users with open issues] or [help fellow committers test recently submitted pull requests].
  - [Report a security vulnerability in Metasploit itself] to Rapid7.
  - Submit an updated or brand new module!  We are always eager for exploits, scanners, and new
    integrations or features. Don't know where to start? Set up a [development environment], then head over to ExploitDB to look for [proof-of-concept exploits] that might make a good module.
@@ -20,12 +20,15 @@ it into Metasploit's master branch.  If you do not care to follow these rules, y
 * **Do** stick to the [Ruby style guide] and use [Rubocop] to find common style issues.
 * **Do** follow the [50/72 rule] for Git commit messages.
 * **Do** license your code as BSD 3-clause, BSD 2-clause, or MIT.
-* **Do** create a [topic branch] to work on instead of working directly on `master` to preserve the
-  history of your pull request.  See [PR#8000] for an example of losing commit history as soon as
-  you update your own master branch.
+* **Do** create a [topic branch] to work on instead of working directly on `master`.
+  This helps protect the process, ensures users are aware of commits on the branch being considered for merge,
+  allows for a location for more commits to be offered without mingling with other contributor changes,
+  and allows contributors to make progress while a PR is still being reviewed.
+
 
 ### Pull Requests
 
+* **Do** write "WIP" on your PR and/or open a [draft PR] if submitting **working** yet unfinished code.
 * **Do** target your pull request to the **master branch**.
 * **Do** specify a descriptive title to make searching for your pull request easier.
 * **Do** include [console output], especially for witnessable effects in `msfconsole`.
@@ -33,6 +36,7 @@ it into Metasploit's master branch.  If you do not care to follow these rules, y
 * **Do** [reference associated issues] in your pull request description.
 * **Don't** leave your pull request description blank.
 * **Don't** abandon your pull request. Being responsive helps us land your code faster.
+* **Don't** post questions in older closed PRs.
 
 Pull request [PR#9966] is a good example to follow.
 
@@ -66,6 +70,7 @@ When reporting Metasploit issues:
 * **Do** write a detailed description of your bug and use a descriptive title.
 * **Do** include reproduction steps, stack traces, and anything that might help us fix your bug.
 * **Don't** file duplicate reports; search for your bug before filing a new report.
+* **Don't** attempt to report issues on a closed PR.
 
 If you need some more guidance, talk to the main body of open source contributors over on our
 [Metasploit Slack] or [#metasploit on Freenode IRC].
@@ -84,7 +89,7 @@ curve, so keep it up!
 [Rubocop]:https://rubygems.org/search?query=rubocop
 [50/72 rule]:http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [topic branch]:http://git-scm.com/book/en/Git-Branching-Branching-Workflows#Topic-Branches
-[PR#8000]:https://github.com/rapid7/metasploit-framework/pull/8000
+[draft PR]:https://help.github.com/en/articles/about-pull-requests#draft-pull-requests
 [console output]:https://help.github.com/articles/github-flavored-markdown#fenced-code-blocks
 [verification steps]:https://help.github.com/articles/writing-on-github#task-lists
 [reference associated issues]:https://github.com/blog/1506-closing-issues-via-pull-requests
